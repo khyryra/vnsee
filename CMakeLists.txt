@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(VNSee VERSION 1.0.0 LANGUAGES CXX)
+project(VNSee VERSION 1.1.0 LANGUAGES CXX)
 
 find_package(PkgConfig REQUIRED)
 

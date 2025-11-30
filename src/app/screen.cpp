@@ -116,7 +116,7 @@ void screen::repaint()
 
     this->last_repaint = chrono::steady_clock::now();
 
-    log::print("Screen update")
+    vnsee::log::print("Screen update")
         << this->update_info.w << 'x' << this->update_info.h << '+'
         << this->update_info.x << '+' << this->update_info.y << '\n';
 
@@ -143,7 +143,7 @@ void screen::set_repaint_mode(repaint_modes mode)
 {
     this->repaint_mode = mode;
 
-    log::print("Screen update") << (mode == repaint_modes::standard
+    vnsee::log::print("Screen update") << (mode == repaint_modes::standard
         ? "Switched to standard mode\n"
         : "Switched to fast mode\n");
 }
@@ -224,7 +224,7 @@ void screen::commit_updates(rfbClient* vnc_client, int x, int y, int w, int h)
 
     // Register the region as pending update, potentially extending
     // an existing one
-    log::print("VNC update") << w << 'x' << h << '+' << x << '+' << y << '\n';
+    vnsee::log::print("VNC update") << w << 'x' << h << '+' << x << '+' << y << '\n';
 
     if (that->update_info.has_update)
     {

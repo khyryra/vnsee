@@ -47,7 +47,7 @@ void vnc_client_log(const char* format, ...)
     // NOLINTNEXTLINE(hicpp-no-array-decay): Use of C library
     vsnprintf(buffer.data(), buffer.size(), format, args);
 
-    log::print("VNC message") << buffer.data();
+    vnsee::log::print("VNC message") << buffer.data();
 
     // NOLINTNEXTLINE(hicpp-no-array-decay): Use of C library
     va_end(args);
@@ -227,7 +227,7 @@ void client::send_button_press(
     auto button_flag = static_cast<std::uint8_t>(button);
     constexpr auto bits = 8 * sizeof(button_flag);
 
-    log::print("Button press")
+    vnsee::log::print("Button press")
         << x << 'x' << y << " (button mask: "
         << std::setfill('0') << std::setw(bits)
         << std::bitset<bits>(button_flag) << ")\n";
@@ -239,7 +239,7 @@ void client::send_virtual_key_press(
     int keyCode, bool down
 )
 {
-    log::print("Virtual key press")
+    vnsee::log::print("Virtual key press")
         << keyCode << "\n";
     
     SendKeyEvent(this->vnc_client, keyCode, down);
