@@ -35,7 +35,7 @@ Thanks to:
 - [ingatellent](https://github.com/ingatellent) for inspiring me to port VNSee to QTFB.
 - The amazing community of the [reMarkable Discord Server](https://discord.gg/u3P9sDW) for helping me with my dumb mistakes and having faith in me.
 
-\-@khyryra
+\- @khyryra
 
 ## Original Acknowledgements
 
