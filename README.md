@@ -27,9 +27,10 @@ This client was built in C++ using [libvncserver](https://github.com/LibVNC/libv
 
 ## Acknowledgments
 
-Thanks to:
+Huge thanks to [Mattéo Delabre](https://github.com/matteodelabre), for writing the original VNSee which made this all possible! Go support them [here](https://github.com/sponsors/matteodelabre).
 
-- [Mattéo Delabre](https://github.com/matteodelabre) for writing the original VNSee, which makes this all possible! Go support him [here](https://github.com/sponsors/matteodelabre).
+Additional thanks to:
+
 - [asivery](https://github.com/asivery) for creating rm-appload and helping me port to QTFB.
 - [Noa Himesaka](https://github.com/NoaHimesaka1873) for helping me understand how QTFB works.
 - [ingatellent](https://github.com/ingatellent) for inspiring me to port VNSee to QTFB.
